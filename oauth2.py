@@ -32,7 +32,7 @@ class MyBearerTokenValidator(BearerTokenValidator):
         return Token(
             issued_at=time.time(),
             expires_in=100,
-            scope='foo',
+            scope='user:email',
             revoked=False,
         )
 

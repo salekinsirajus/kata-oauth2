@@ -19,14 +19,14 @@ client = OAuthClient(
 
 
 # TODO: remove
-token = {
+fake_token = {
     'access_token': 'dca6f1125fb4874e058887a098dadf91f0e1e70d',
     'token_type': 'bearer',
     'scope': 'user:email'
 }
 
 
-r = requests.get('http://127.0.0.1:5000/', headers={'Authorization': 'Bearer {access_token}'.format(**token)})
+r = requests.get('http://127.0.0.1:5000/', headers={'Authorization': 'Bearer {access_token}'.format(**fake_token)})
 print()
 print(r.text)
 print()
